@@ -84,6 +84,15 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         return reusableHeaderView
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let itemName = (((self.currentUserWishes?.object(at: indexPath.row) as! NSDictionary)["wishData"]! as? FIRDataSnapshot)?.value as? NSDictionary)?["title"] as? String {
+            let link = "https://www.amazon.com/s/field-keywords=\(itemName)"
+            UIApplication.shared.openURL(NSURL(string: self.spacesToDash(string: link)) as! URL)
+        } else {
+            print("itemName nil (ProfileViewController.swift)")
+        }
+    }
+    
     //MARK: Private helper methods
     private func wishAlreadyExists(wishID: String?) -> Bool {
         
@@ -106,5 +115,10 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         return false
         
     }
-
+    
+    //MARK: Private Helper Methods
+    private func spacesToDash(string: String) -> String {
+        let fullNameArr = string.characters.split{$0 == " "}.map(String.init)
+        return fullNameArr.joined(separator: "-")
+    }
 }

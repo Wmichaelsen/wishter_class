@@ -27,7 +27,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="myJ-E8-JfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1530" y="442"/>
+            <point key="canvasLocation" x="-735" y="359"/>
         </scene>
         <!--Profile-->
         <scene sceneID="tne-QT-ifu">
@@ -49,7 +49,7 @@
                                         <rect key="frame" x="0.0" y="28" width="383" height="394"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QEX-oa-pqO" id="L5Z-vB-nSB">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="393"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="394"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PY3-7B-5n6">
@@ -140,7 +140,7 @@
                                         <rect key="frame" x="0.0" y="422" width="383" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rSM-bP-JlT" id="ehJ-kq-LWu">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="94"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone-5s-big1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Q77-nc-jL9">
@@ -224,13 +224,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="1263"/>
+            <point key="canvasLocation" x="1009" y="1263"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="we9-kF-B62">
             <objects>
                 <navigationController id="dFd-EJ-RNK" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nuF-u6-two">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nuF-u6-two">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -276,7 +276,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WaU-rx-R6O" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" id="GOd-pg-uUX"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="fKn-9c-Yqm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="fKn-9c-Yqm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -287,7 +287,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lcx-O4-0YY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="282" y="1173"/>
+            <point key="canvasLocation" x="282" y="1263"/>
         </scene>
         <!--Explore-->
         <scene sceneID="7WT-16-KZH">
@@ -295,7 +295,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sxE-Qn-2i6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Explore" id="c56-8N-zij"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8uc-G5-zVB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8uc-G5-zVB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -328,7 +328,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ysx-SB-Cwg" id="Sgm-tA-fPg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eBE-nb-dqp">
