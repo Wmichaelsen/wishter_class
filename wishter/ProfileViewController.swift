@@ -16,6 +16,8 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     var currentUser: FIRDataSnapshot?
     var currentUserWishes: NSMutableArray? = NSMutableArray()
     
+    var clickedIndexRow = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,7 +39,6 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
                         }
                     }
                 }
-                
             }
         })
     }
@@ -54,7 +55,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.currentUserWishes!.count
     }
-    
+
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -85,11 +86,30 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let itemName = (((self.currentUserWishes?.object(at: indexPath.row) as! NSDictionary)["wishData"]! as? FIRDataSnapshot)?.value as? NSDictionary)?["title"] as? String {
+       /* if let itemName = (((self.currentUserWishes?.object(at: indexPath.row) as! NSDictionary)["wishData"]! as? FIRDataSnapshot)?.value as? NSDictionary)?["title"] as? String {
             let link = "https://www.amazon.com/s/field-keywords=\(itemName)"
             UIApplication.shared.openURL(NSURL(string: self.spacesToDash(string: link)) as! URL)
         } else {
             print("itemName nil (ProfileViewController.swift)")
+        }
+ */
+        
+       // if let link = (((self.currentUserWishes?.object(at: indexPath.row) as! NSDictionary)["wishData"]! as? FIRDataSnapshot)?.value as? NSDictionary)?["url"] as? String {
+       //     UIApplication.shared.openURL(NSURL(string: "https://\(link)") as! URL)
+       // } else {
+       //     print("link is nil (ProfileViewController.swift)")
+       // }
+        
+        self.clickedIndexRow = indexPath.row
+        self.performSegue(withIdentifier: "toItem", sender: self)
+        self.myCollectionView.deselectItem(at: indexPath, animated: true)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toItem" {
+            (segue.destination as? ItemViewController)?.itemData = (((self.currentUserWishes?.object(at: self.clickedIndexRow) as! NSDictionary)["wishData"]! as? FIRDataSnapshot)?.value as? NSDictionary)
+            (segue.destination as? ItemViewController)?.itemImage = (self.currentUserWishes?.object(at: self.clickedIndexRow) as! NSDictionary)["image"] as? UIImage
         }
     }
     

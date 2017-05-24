@@ -10,6 +10,8 @@
 		2606C6CF1E3536860016C0EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2606C6CE1E3536860016C0EE /* GoogleService-Info.plist */; };
 		2616EDC51E9BD2AA00AC64A4 /* CustomUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2616EDC41E9BD2AA00AC64A4 /* CustomUserCell.swift */; };
 		2616EDC91E9BD88900AC64A4 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2616EDC81E9BD88900AC64A4 /* ExploreViewController.swift */; };
+		264741E41ED526ED00F76CA4 /* CustomItemHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264741E31ED526ED00F76CA4 /* CustomItemHeader.swift */; };
+		264741E61ED52B6600F76CA4 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264741E51ED52B6600F76CA4 /* ItemViewController.swift */; };
 		265589AD1E3F6AA5006FD9FF /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265589A81E3F6A4F006FD9FF /* FBSDKCoreKit.framework */; };
 		265589AE1E3F6AA5006FD9FF /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265589A91E3F6A4F006FD9FF /* FBSDKLoginKit.framework */; };
 		265589AF1E3F6AA5006FD9FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265589A71E3F6A4F006FD9FF /* Bolts.framework */; };
@@ -64,6 +66,8 @@
 		2606C6CE1E3536860016C0EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2616EDC41E9BD2AA00AC64A4 /* CustomUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUserCell.swift; sourceTree = "<group>"; };
 		2616EDC81E9BD88900AC64A4 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		264741E31ED526ED00F76CA4 /* CustomItemHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomItemHeader.swift; sourceTree = "<group>"; };
+		264741E51ED52B6600F76CA4 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		265589A71E3F6A4F006FD9FF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "FacebookSDKs-iOS-4.18.0/Bolts.framework"; sourceTree = "<group>"; };
 		265589A81E3F6A4F006FD9FF /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-4.18.0/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		265589A91E3F6A4F006FD9FF /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-4.18.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 				2688B6151E70091100DE6E3E /* CustomAddCell.swift */,
 				2616EDC41E9BD2AA00AC64A4 /* CustomUserCell.swift */,
 				26BA35421E9FB7210023E610 /* CustomProfileCell.swift */,
+				26BA35401E9E97E80023E610 /* ProfileHeader.swift */,
+				264741E31ED526ED00F76CA4 /* CustomItemHeader.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -231,7 +237,7 @@
 				26EA0B4B1E033D80002A8E3B /* ViewController.swift */,
 				2616EDC81E9BD88900AC64A4 /* ExploreViewController.swift */,
 				26BA353E1E9E7EDF0023E610 /* ProfileViewController.swift */,
-				26BA35401E9E97E80023E610 /* ProfileHeader.swift */,
+				264741E51ED52B6600F76CA4 /* ItemViewController.swift */,
 				26EA0B4D1E033D80002A8E3B /* Main.storyboard */,
 				26EA0B501E033D80002A8E3B /* Assets.xcassets */,
 				26EA0B521E033D80002A8E3B /* LaunchScreen.storyboard */,
@@ -478,9 +484,11 @@
 				2688B6161E70091100DE6E3E /* CustomAddCell.swift in Sources */,
 				26BA35411E9E97E80023E610 /* ProfileHeader.swift in Sources */,
 				26C75ABB1E356FB400BFF850 /* IntroPageViewController.swift in Sources */,
+				264741E61ED52B6600F76CA4 /* ItemViewController.swift in Sources */,
 				2616EDC51E9BD2AA00AC64A4 /* CustomUserCell.swift in Sources */,
 				26C75AB91E356FB400BFF850 /* FirstPageViewController.swift in Sources */,
 				26C75AAF1E35641200BFF850 /* FirebaseOperation.swift in Sources */,
+				264741E41ED526ED00F76CA4 /* CustomItemHeader.swift in Sources */,
 				26BA35431E9FB7210023E610 /* CustomProfileCell.swift in Sources */,
 				267FFBD81E4426770019A313 /* WishManager.swift in Sources */,
 				26BA353F1E9E7EDF0023E610 /* ProfileViewController.swift in Sources */,
